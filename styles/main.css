@@ -36,8 +36,10 @@ body {
 }
 
 .main__title {
+    line-height: 1.2;
     font-size: 64px;
     font-weight: 400;
+    margin-top: 0;
 }
 
 .main__images {
@@ -55,6 +57,12 @@ body {
 .imgTwo {
     width: 200px;
     height: 200px;
+}
+
+.main__text {
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 43px;
 }
 
 .link {
