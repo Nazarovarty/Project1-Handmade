@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Open+Sans&display=swap');
+
+:root {
+    --lightColor: #EFE3DF;
+    --textColor: #2B2024;
+    --bgLink: #673D3F;
+    --bgLinkHover: #B05459;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--lightColor);
+    color: var(--textColor);
+    font-size: 22px;
+}
+
+.container {
+    max-width: 1250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    
+}
+.main__item {
+    flex-basis: 460px;
+}
+.main__title,
+.link {
+    font-family: 'IBM Plex Serif', serif;
+    
+}
+
+.main__title {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.main__images {
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.imgOne {
+    width: 250px;
+    height: 350px;
+}
+
+.imgTwo {
+    width: 200px;
+    height: 200px;
+}
+
+.link {
+    font-size: 20px;
+    text-align: center;
+    background: var(--bgLink);
+    color: var(--lightColor);
+    text-decoration: none;
+    padding: 16px 0;
+    display: block;
+    max-width: 300px;
+    transition: .2s;
+}
+
+.link:hover {
+    background: var(--bgLinkHover);
+}
