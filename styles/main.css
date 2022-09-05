@@ -83,6 +83,7 @@ body {
     display: block;
     max-width: 300px;
     transition: .2s;
+    cursor: pointer;
 }
 
 .link:hover {
@@ -153,6 +154,7 @@ body {
     justify-content: center;
     gap: 82px;
     margin-top: 157px;
+    margin-bottom: 200px;
 }
 
 .circle__text {
@@ -180,12 +182,14 @@ body {
 
 .form__select {
     margin-bottom: 24px;
-    width: 100%;
-    max-width: 340px;
+    width: 340px;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: url(../images/polygon.svg);
+    background-size: 13px 8px;
     background-repeat: no-repeat;
+    background-position: 95% center;
+    
 }
 
 .form__input {
@@ -197,7 +201,24 @@ body {
 .form__input {
     font-size: 20px;
     border: 1px solid var(--bgLink);
-    background: var(--lightColor);
+    background-color: var(--lightColor);
     padding: 17px 26px;
     box-sizing: border-box;
+
+}
+
+.total__price {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: var(--bgLink);
+}
+
+.total__info {
+    line-height: 1.4;
+    margin-top: 0;
+}
+
+.total__email {
+    color: var(--textColor);
+    display: block;
 }
