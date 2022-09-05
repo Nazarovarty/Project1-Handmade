@@ -38,6 +38,28 @@
                 </div>
             </div>
         </section>
+        <div class="cost">
+            <div class="cost__title">
+                <svg class="circle" width="200" height="200" viewBox="0 0 200 200">
+                    <path id="circleShape" class="circle__shape" d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" fill="none"></path>
+                    <path class="circle__arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115" fill="none" stroke="#2B2024" stroke-width="2"></path>
+                    <text class="circle__text">
+                        <textPath href="#circleShape">
+                            calculate the cost
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+            <div class="cost__calc">
+                <form class="form">
+                    <p class="form__text">Choose your product</p>
+                    <select id="">
+                        <option value="" disabled>Select from list</option>
+                        <option value="" >Select from list</option>
+                    </select>
+                </form>
+            </div>
+        </div>
     </div>
    
     <script src="scripts/script.js"></script>
