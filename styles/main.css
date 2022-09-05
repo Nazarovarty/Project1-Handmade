@@ -34,7 +34,9 @@ body {
 .main__title,
 .link,
 .title-h2,
-.circle__text {
+.circle__text,
+.form__select,
+.form__input {
     font-family: 'IBM Plex Serif', serif;
     
 }
@@ -73,7 +75,9 @@ body {
     font-size: 20px;
     text-align: center;
     background: var(--bgLink);
+    border: none;
     color: var(--lightColor);
+    width: 100%;
     text-decoration: none;
     padding: 16px 0;
     display: block;
@@ -144,6 +148,13 @@ body {
 }
 
 /* Cost */
+.cost {
+    display: flex;
+    justify-content: center;
+    gap: 82px;
+    margin-top: 157px;
+}
+
 .circle__text {
     text-transform: uppercase;
     letter-spacing: 12px;
@@ -156,8 +167,37 @@ body {
     animation-play-state: paused;
 }
 
+
 @keyframes motion {
     to {
         transform: rotate(360deg);
     }
+}
+
+.form__text {
+    margin-bottom: 9px;
+}
+
+.form__select {
+    margin-bottom: 24px;
+    width: 100%;
+    max-width: 340px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../images/polygon.svg);
+    background-repeat: no-repeat;
+}
+
+.form__input {
+    margin-bottom: 40px;
+    width: 90px;
+}
+
+.form__select,
+.form__input {
+    font-size: 20px;
+    border: 1px solid var(--bgLink);
+    background: var(--lightColor);
+    padding: 17px 26px;
+    box-sizing: border-box;
 }
